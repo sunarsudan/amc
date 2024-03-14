@@ -1,10 +1,10 @@
 import 'dart:async';
+import 'package:amc/admin/screens/common/bottom_bar.dart';
+import 'package:amc/admin/screens/post_screen/screens/post_screen.dart';
+import 'package:amc/admin/screens/post_screen_view/screens/post_view_screen.dart';
 import 'package:amc/routing/routing.dart';
-import 'package:amc/screens/contact/contact_screen.dart';
 import 'package:amc/screens/home_screen/bottom_bar.dart';
-import 'package:amc/screens/home_screen/index_screen/index.dart';
 import 'package:amc/screens/theme_screen/change_theme.dart';
-import 'package:amc/screens/theme_screen/theme_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

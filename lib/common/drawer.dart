@@ -1,7 +1,10 @@
+import 'package:amc/admin/screens/common/bottom_bar.dart';
 import 'package:amc/common/widgets/about_developer.dart';
 import 'package:amc/constants/global_variable.dart';
+import 'package:amc/main.dart';
 import 'package:amc/screens/theme_screen/theme_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class DrawerScreen extends StatefulWidget {
   const DrawerScreen({super.key});
@@ -32,10 +35,17 @@ class _DrawerScreenState extends State<DrawerScreen> {
             listItem("About Dev", Icons.abc_outlined, () {
               Navigator.pushNamed(context, AboutDeveloper.routeName);
             }),
+            listItem("Admin Only", Icons.lock, () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AdminBottomBar()));
+            }),
             listItem("About School ", Icons.abc_outlined, () {
               Navigator.pushNamed(context, AboutDeveloper.routeName);
             }),
             listItem("Share", Icons.share, () {}),
+            listItem("Logout", Icons.logout, () {}),
           ],
         ),
       ),

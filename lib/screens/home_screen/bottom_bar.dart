@@ -1,7 +1,10 @@
 import 'package:amc/common/drawer.dart';
 import 'package:amc/screens/contact/contact_screen.dart';
 import 'package:amc/screens/home_screen/index_screen/index.dart';
+import 'package:amc/screens/settings/school_contact_collection.dart';
 import 'package:amc/screens/settings/settings.dart';
+import 'package:amc/screens/teacher/screens/teacher_card.dart';
+import 'package:amc/screens/teacher_phone/screens/teacher_contact_number.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -16,8 +19,8 @@ class _BottomBarState extends State<BottomBar> {
   int currentPage = 0;
   List<Widget> itemList = [
     const HomeScreen(),
-    const ContactScreen(),
-    const Settings(),
+    const SchoolCollection(),
+    const TeacherCardScreen()
   ];
   void changePage(int page) {
     setState(() {
